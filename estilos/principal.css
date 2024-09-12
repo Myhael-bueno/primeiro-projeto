@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background:rgba(0,0,0,0.7)  url(../imgs/comida7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #282828;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.342);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 6rem;
+}
+
+.logo-bar {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.20rem;
+    font-weight: 400;
+}
+
+/* Configuração do Main */
+
+.main-img {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    width: 43vh;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+}
+
+.container h3 {
+    font-size: 2rem;
+    padding: 0px 10px;
+}
+.container p {
+    font-size: 1.3rem;
+    color: #cf9e36;
+}
+
+/* Configuração celular */
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+   
+    .nav-bar {
+        padding: 0rem 2rem;
+    }
+
+    .logo {
+        width: 100px;
+    }
+    .nav-item {
+        display: none
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        padding: 3rem 1rem;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 0.5rem;
+    }
+
+    .open {
+        display: block;
+    }
+    
+}
